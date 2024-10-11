@@ -17,15 +17,10 @@ posts.sort(cmp);
 
 <BaseLayout pageTitle={pageTitle}>
   <div class="flex flex-col gap-4">
-    <div class="text-2xl text-stone-700 dark:text-stone-200 mb-8">
-      ▐𝟯 █▄ ⬤ ▐▅▚
+    <div class="flex justify-end">
+      <p class="px-2">by</p>
+      <img class="w-10 h-10 p-[0.5] rounded-full ring ring-gray-300 dark:ring-gray-500" src="https://avatars.githubusercontent.com/u/80367187?v=4" alt="avatar">
     </div>
-    <input
-      data-posts={JSON.stringify(posts)}
-      id="search"
-      autocomplete="off"
-      class="h-8 w-1/2 rounded-md px-2 py-1 bg-slate-100 mb-2 border border-1 border-stone-400 text-stone-700 focus:border-stone-600 focus:outline-none dark:border-stone-400 dark:focus:border-stone-200 bg-stone-50 dark:bg-stone-800 dark:text-stone-300 transition-colors duration-200"
-    />
 
     {
       posts.map((post) => (
