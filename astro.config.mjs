@@ -6,7 +6,7 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   integrations: [tailwind()],
   site: "https://lipej.github.io",
-  base: "/nblog",
+  base: "/",
   prefetch: {
     prefetchAll: true,
   },
