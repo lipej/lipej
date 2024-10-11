@@ -5,7 +5,7 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind()],
-  site: "https://blog.lipej.dev",
+  site: "https://lipej.dev",
   prefetch: {
     prefetchAll: true,
   },
